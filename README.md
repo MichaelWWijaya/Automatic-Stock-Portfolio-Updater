@@ -1,2 +1,3 @@
 # Automatic-Stock-Portfolio-Updater
-This software is used to automatically update cells on an excel file from the Yahoo finance API
+The function of this software to to automatically update selected cells from an excel file from the stock close prices from yahoo finance.
+
