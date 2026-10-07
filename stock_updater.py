@@ -16,8 +16,7 @@ print("\nWelcome to Michael's Automatic Stock Portfolio Updater!\nPlease input y
 close = input("\nPlease close your portfolio file before running this program (Click ENTER to start)")
 
 # or you can save all the information without needing to input again 
-# fileN = "2026 USA Portfolio Michael"
-fileN = "2026 USA Portfolio Michael"
+fileN = "Testing Portfolio"
 fileN += ".xlsx"
 month = "Oct"
 path_file = r"C:\Users\pingl\Documents\Michael\a PERSONAL PROJECT CS\Automatic Stock Updater"
@@ -152,8 +151,6 @@ from openpyxl import load_workbook
 workbook = load_workbook(filename="stock_prices.xlsx")
 sheet = workbook["Sheet1"]
 
-# workbook2 = load_workbook(filename="2026 USA Portfolio Michael.xlsx")
-# sheet2 = workbook2["Apr"]
 
 workbook2 = load_workbook(filename=fileN)
 sheet2 = workbook2[month]
@@ -173,4 +170,3 @@ for i in range(iterations):
 
 workbook.save(filename="stock_prices.xlsx")
 workbook2.save(filename=fileN)
-# workbook2.save(filename="2026 USA Portfolio Michael.xlsx")
